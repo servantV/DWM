@@ -39,11 +39,13 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 #include "grid.c"
 #include "grid.c"
+#include "grid.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
+	{ "HHH",      grid },
 	{ "HHH",      grid },
 	{ "HHH",      grid },
 };

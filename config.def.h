@@ -47,6 +47,7 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 #include "tatami.c"
 #include "grid.c"
+#include "grid.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
@@ -54,6 +55,7 @@ static const Layout layouts[] = {
 	{ "[M]",      monocle },
 	{ "HHH",      grid },
 	{ "|+|",      tatami },
+	{ "HHH",      grid },
 	{ "HHH",      grid },
 };
 
